@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <script src="assets/js/script.js"></script>
+</head>
+
+<body>
+</body>
+<form action="response.html">
+    <div class="item">
+        <input type="text" placeholder="Name" name="name">
+    </div>
+    <div class="item">
+        <input type="text" placeholder="Address" name="address">
+    </div>
+    <div class="item">
+        <input type="text" placeholder="Address 2" name="address2">
+    </div>
+    <div class="item">
+        <input type="text" placeholder="Zip code" class="zipcode" name="zipcode"><input type="text" placeholder="City" class="city" name="city">
+    </div>
+    <hr>
+    <h2>show/hide</h2>
+    <div class="item ">
+        <input type="checkbox" id="hasComments"><label for="hasComments"><span class="checkbox"><span class="checkmark"></span></span></span>I have comments</label>
+    </div>
+    <div class="item" id="commentsection">
+        <p>Write your comments here</p>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+    </div>
+    <hr>
+    <h2>Value from select</h2>
+    <div>
+        <select name="" id="mySelect">
+            <option value="Fruit">I eat fruit</option>
+            <option value="Vegetables">I eat vegetables</option>
+            <option value="Beer">I drink beer</option>
+        </select>
+        <div class="item">
+            <a id="showLink" href="#">Show me the value of selected</a>
+        </div>
+        <div id="selectResult"></div>
+    </div>
+    <hr>
+    <h2>Accept terms</h2>
+    <div class="item ">
+        <input type="checkbox" id="acceptTerms"><label for="acceptTerms"><span class="checkbox"><span class="checkmark"></span></span></span>I accept the terms</label>
+    </div>
+    <div class="item">
+        <button id="submitBtn" disabled>Submit</button>
+    </div>
+</form>
+<!--
+    HTML by Dan Høegh
+    UCN MMD 2018
+-->
+
+</html>
